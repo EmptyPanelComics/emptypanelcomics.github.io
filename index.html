@@ -2,14 +2,52 @@
   <head>
 
     <style>
+      @font-face {
+        src: url('Font/msgothic.ttf');
+        font-family: "MS PGothic";
+
+      }
+
     body {
-        font-family: "ＭＳ Ｐゴシック";
+        font-family: "MS PGothic";
+        font-size: "12";
       }
 
     .button1 {
         border: none;
+        background-color: darkgrey;
+      }
+
+    .button2 {
+        border: none;
         background-color: grey;
-    }
+      }
+
+    #wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5px;
+      }
+
+    .scolumn {
+        width: 500px;
+      }
+
+    .spanel {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    .spanel.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+    #main {
+        width: 500px;
+      }
     </style>
 
     <meta charset="UTF-8">
@@ -19,100 +57,179 @@
     <link href="/index.css" rel="stylesheet" type="text/css" media="all">
   </head>
 <body>
-  <!-- god this is some dogshit spaghetti right here -->
-  <center>
-  <table bgcolor="lightgrey" width="500" style="padding: 1px; border-spacing: 3px;">
+  <div id="wrapper">
+
+  <!-- god this is some dogshit spaghetti right here i really need to start tabbing my htmls -->
+
+  <!-- SMALL -->
+  <div class="scolumn">
+    <div id="smalls" class="spanel hidden">
+      <table bgcolor="lightgrey" width="500">
+      <tr>
+        <td colspan="6"><center><img src="Images/smallslogo.png"/></center></td>
+      </tr>
+      <tr>
+        <td>Oh wow! Theyre small.</td>
+      </tr>
+      <tr>
+      <td bgcolor="white" colspan="5">
+        <p>Smalls are the usual comics you see on my tumblr, but now here in its own special section in the site! wowzas!</p>
+        <p>theres probably a better way to implement this, but im tired, so for now it'll be WIP</p>
+      </td>
+      </table>
+    </div>
+  </div>
+
+<!-- MAIN TITLE-->
+<div id="main">
+  <table bgcolor="lightgrey" width="500" style="padding:1px;border-spacing:3px;">
     <tr>
-<td colspan="6"><center><img src="Images/empty panel logo.png"/></center></td>
-</tr>
-<tr>
-<td colspan="5">
-<center><p>Bad awful no good comics based on the horrible place that is my brain</p></center>
-</td>
-</tr>
-<tr>
-<td bgcolor="grey" width="100">
-  <center><button class="button1"><a style="color: white;"><b>Smalls</b></a></button></center>
-</td>
-<td bgcolor="grey" width="100">
-  <center><button class="button1"><a style="color: white;"><b>Larges</b></a></button></center>
-</td>
-<td bgcolor="grey" width="100">
-  <center><button class="button1" onclick=" window.open('https://www.tumblr.com/blog/emptypanelcomics')"><a style="color: white;"><b>Tumblr</b></a></button></center>
-</td>
-<td bgcolor="grey" width="100">
-  <center><button class="button1" onclick=" window.open('https://jjjsmusicbank.bandcamp.com')"><a style="color: white;"><b>Bandcamp</b></a></button></center>
-</td>
-<td bgcolor="grey" width="100">
-  <center><button class="button1"onclick=" window.open('https://ko-fi.com/jjjnco')"><a style="color: white;"><b>Kofi</b></a></button></center>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-  <p><b>Introduction</b></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="white" colspan="5">
-  <p><b>welcome to the empty panel comics website</b>, where you get to see the weird comics i make, sometimes about my personal life, sometimes about whatever game or media im interested in at the time.</p>
-  <p>I've made this website, other than to have a site for my comics, to also have larger, bigger projects set up.</p>
-  <p>As of now, this site is still heavily WIP, which means that for the time being, this site is a glorified linktree. please dont mind if there are any non functioning buttons here and there.</p>
-</td>
-</tr>
-  <tr>
-  <td colspan="5">
-    <p><b>About</b></p>
-  </td>
-  </tr>
-<tr>
-<td bgcolor="white" colspan="5">
-  <p>i go by many usernames, but for the sake of my privacy, you may call me <b>miss empty</b>, or <b>J</b>. i mostly draw (SFW and NSFW) and compose music, which is my usual source of income.</p>
-  <p>im genderfluid, and thats its own complicated can of worms. however, i enjoy being called as <b>she/her</b>, and i would prefer if you continue to mention me as such.</p>
-  <p>either way, <b>welcome to the empty panel</b></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-  <p><b>My Buttons</b></p>
-</td>
-<td colspan="3">
-  <p><b>Second panel</b></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="white" colspan="2">
-<center><b>Get your Buttons!</b></center>
-<p><center><img src="Images/emptypanelbutton1.gif"/><img src="Images/emptypanelbutton2.gif"/></center></p>
-</td>
-<td bgcolor="white" colspan="3">
-<p>temporary spot, maybe for random posts or songs? idk yet</p>
-</td>
-</tr>
+      <td colspan="6"><center><img src="Images/empty panel logo.png"/></center></td>
+      </tr>
+        <tr>
+        <td colspan="5">
+        <center><p>Bad awful no good comics based on the horrible place that is my brain</p></center>
+        </td>
+      </tr>
 
-<tr>
-<td colspan="5">
-  <p><b>The White Void Button Wall</b></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="white" colspan="5">
-<a href="https://badgraph1csghost.neocities.org/trillion" target="_blank"><img src='Images/noai.gif'></a><a href="https://auberylis.moe" target="_blank"><img src='Images/auberylismoe.png'></a>
-</td>
-</tr>
+      <!-- NAVBAR BUTTONS -->
+      <tr>
+        <td bgcolor="grey" width="100">
+          <center><button id="smallsbutton" class="button2"><a style="color: white;"><b>< Smalls</b></a></button></center>
+        </td>
+        <td bgcolor="darkgrey" width="100">
+          <center><button class="button1" onclick=" window.open('https://www.tumblr.com/blog/emptypanelcomics')"><a style="color: white;"><b>Tumblr</b></a></button></center>
+        </td>
+        <td bgcolor="darkgrey" width="100">
+          <center><button class="button1" onclick=" window.open('https://jjjsmusicbank.bandcamp.com')"><a style="color: white;"><b>Bandcamp</b></a></button></center>
+        </td>
+        <td bgcolor="darkgrey" width="100">
+          <center><button class="button1"onclick=" window.open('https://ko-fi.com/jjjnco')"><a style="color: white;"><b>Kofi</b></a></button></center>
+        </td>
+        <td bgcolor="grey" width="100">
+          <center><button id="largesbutton" class="button2"><a style="color: white;"><b>Larges ></b></a></button></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
 
-<tr>
-<td colspan="5">
-  <p><b>Stance in AI</b></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="white" colspan="5">
-  <p>I major in <b>Business IT</b> with a minor in <b>Machine Learning</b>. Despite this, i am extremely Anti-AI, and i <b>do NOT</b> condone the usage of it in any unnecessary spaces, without consent of the users or people exploited by AI.</p>
-  <p>By proxy, Empty panel comics, JJJ n' Co, and anyone involved here, does not use any form of AI Imagery, or AI Writing for any of our content.</p>
-</td>
-</tr>
+          <!-- MAIN INTRODUCTION -->
+          <p><b>Introduction</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="white" colspan="5">
+          <p><b>welcome to the empty panel comics website</b>, where you get to see the weird comics i make, sometimes about my personal life, sometimes about whatever game or media im interested in at the time.</p>
+          <p>I've made this website, other than to have a site for my comics, to also have larger, bigger projects set up.</p>
+          <p>As of now, this site is still heavily WIP, which means that for the time being, this site is a glorified linktree. please dont mind if there are any non functioning buttons here and there.</p>
+        </td>
+      </tr>
+        <tr>
+          <td colspan="5">
+
+          <!-- MAIN ABOUT -->
+            <p><b>About</b></p>
+          </td>
+        </tr>
+      <tr>
+        <td bgcolor="white" colspan="5">
+          <p>i go by many usernames, but for the sake of my privacy, you may call me <b>miss empty</b>, or <b>J</b>. i mostly draw (SFW and NSFW) and compose music, which is my usual source of income.</p>
+          <p>im genderfluid, and thats its own complicated can of worms. however, i enjoy being called as <b>she/her</b>, and i would prefer if you continue to mention me as such.</p>
+          <p>either way, <b>welcome to the empty panel</b></p>
+        </td>
+      </tr>
+
+      <!-- BUTTONS + EMPTY THINGAMABOB -->
+      <tr>
+        <td colspan="2">
+          <p><b>My Buttons</b></p>
+        </td>
+        <td colspan="3">
+          <p><b>Second panel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="white" colspan="2">
+        <center><b>Get your Buttons!</b></center>
+        <p><center><img src="Images/emptypanelbutton1.gif"/><img src="Images/emptypanelbutton2.gif"/></center></p>
+        </td>
+        <td bgcolor="white" colspan="3">
+        <p>temporary spot, maybe for random posts or songs? idk yet</p>
+        </td>
+      </tr>
+
+          <!-- BUTTONS!!! -->
+      <tr>
+        <td colspan="5">
+          <p><b>The White Void Button Wall</b></p>
+        </td>
+        </tr>
+        <tr>
+        <td bgcolor="white" colspan="5">
+        <a href="https://badgraph1csghost.neocities.org/trillion" target="_blank"><img src='Images/noai.gif'></a><a href="https://auberylis.moe" target="_blank"><img src='Images/auberylismoe.png'></a>
+        </td>
+      </tr>
+
+          <!-- AI THING IG -->
+      <tr>
+        <td colspan="5">
+          <p><b>Stance in AI</b></p>
+        </td>
+        </tr>
+        <tr>
+        <td bgcolor="white" colspan="5">
+          <details>
+          <summary>TLDR: Despite everything, I despise AI.</summary>
+          <p>I major in <b>Business IT</b> with a minor in <b>Machine Learning</b>. Despite this, i am extremely Anti-AI, and i <b>do NOT</b> condone the usage of it in any unnecessary spaces, without consent of the users or people exploited by AI.</p>
+          <p>Studying AI and ML in college, i am very aware of its helpful potential, especially in things that <b>does</b> require predictions, such as weather, health, ect. Although i joined the class mostly out of spite, i left it with a profound sense of admiration on how it functions and dissapointment on its current state in our society. despite the stigma, i am sure, and i do believe that there is an ethical way to implement Machine Learning into something that actually benefits people.</p>
+          <p><b>However</b> the current usage of AI as of writing is not aimed towards anything good, and rather is instead used to exploit users and artists. And instead of being used to aid people, it is instead used to belittle or manipulate others (IE. Scams, deepfakes, AI Girlfriends), while feeding the ones already knee deep into it with more of the same echo chambers they want to listen to.</p>
+          <p>The only way i would feel happy about AI, is if its actually used for what its made of. and it is clearly not. therefore, until the tides change, <b>i do not believe</b> that AI is the future, especially in its current state, and <b>i do not believe</b> that it is of any worth.</p>
+          <p>And especially with its current state, where its only existance is to make companies richer, and a seemingly nonsensical race to make it "act like a human" in a desperate attempt of immortality, which in of itself is causing harm for both people and the enviroment, i physically <b>CANT</b> support it in any way.</p>
+          <p>By proxy, Empty panel comics, JJJ n' Co, and anyone involved here, does not use any form of AI Imagery, or AI Writing for any of our content, nor do we consent to our works been taken by AI.</p>
+        </details>
+        </td>
+      </tr>
+
+        <!-- VVV Anything new for MAIN should be added down here VVV -->
   </table>
-  </center>
+</div>
+
+  <!-- LARGE -->
+  <div class="sidecolumn">
+    <div id="larges" class="spanel hidden">
+      <table bgcolor="lightgrey" width="500">
+      <tr>
+        <td colspan="6"><center><img src="Images/largeslogo.png"/></center></td>
+      </tr>
+      <tr>
+        <td>OH GOD THEYRE LARGE</td>
+      </tr>
+      <tr>
+      <td bgcolor="white" colspan="5">
+        <p>LARGES will be for the more longer, usually non canon, properly full stories, either based on a fandom, or just based on ocs or whatever.</p>
+        <p>unlike smalls, which are just one shots usually, Larges will be full on comics. i hope so anyways, idk how my motivation works</p>
+        <p>WIP: i still havent made any, and they will be on their own seperate page (which will be linked via the larges sections)</p>
+      </td>
+      </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+  <!-- hell -->
+<script>
+  const smallpanel  = document.getElementById("smalls");
+  const largepanel = document.getElementById("larges");
+  document.getElementById("smallsbutton").addEventListener('click', function() {
+    smallpanel.classList.toggle("hidden");
+  });
+  document.getElementById("largesbutton").addEventListener('click', function() {
+    largepanel.classList.toggle("hidden");
+  });
+</script>
+    <!-- i hate javascript so fucking much im going to shit bricks -->
+    <!-- do i even know what im doing? all i do is go through stack overflow and hope my copy paste botch job works fine -->
 </body>
 
 <center><p>(c) 20xx, JJJ n' Co, Empty Panel Comics</p></center>
